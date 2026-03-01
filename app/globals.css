@@ -1,15 +1,9 @@
 @import 'tailwindcss';
 
+:root {
+  color-scheme: dark;
+}
+
 body {
-  @apply bg-zinc-50 text-zinc-900;
-}
-
-input,
-textarea,
-select {
-  @apply border border-zinc-200 rounded-md px-3 py-2;
-}
-
-.card {
-  @apply bg-white border border-zinc-200 rounded-xl shadow-sm;
+  @apply bg-zinc-950 text-zinc-100 antialiased;
 }
