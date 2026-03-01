@@ -66,3 +66,18 @@ Set using env vars:
 - `POST /api/orders/:id/sync` manual status sync.
 - `POST /api/webhooks/steadfast` courier webhook updates.
 - `GET /api/cron/sync-status` polling sync; requires `x-cron-secret` header.
+
+## Avoiding PR Merge Conflicts
+If GitHub shows conflicts when opening a PR, sync your branch with latest `main` before opening/updating the PR:
+
+```bash
+./scripts/sync-main.sh
+```
+
+Then push your branch again:
+
+```bash
+git push --force-with-lease origin <your-branch>
+```
+
+Also ensure your PR **base branch is `main`** and your compare branch is your feature branch.
