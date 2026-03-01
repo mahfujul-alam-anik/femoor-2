@@ -33,7 +33,7 @@ export default function LoginPage() {
       <form onSubmit={onSubmit} className="card w-full max-w-sm space-y-4 p-6">
         <h1 className="text-2xl font-semibold">Admin Login</h1>
         <input name="email" placeholder="Email" defaultValue="admin@gmail.com" required />
-        <input name="password" placeholder="Password" type="password" defaultValue="12345" required />
+        <input name="password" placeholder="Password" type="password" defaultValue="123456" required />
         <button className="w-full rounded-md bg-zinc-900 px-3 py-2 text-white" disabled={loading}>
           {loading ? 'Signing in...' : 'Sign in'}
         </button>

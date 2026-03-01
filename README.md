@@ -1,6 +1,13 @@
-# Fullstack Admin Panel (Next.js + MongoDB)
+# Fullstack Admin Panel (Next.js 16 + MongoDB)
 
 Modern admin panel to manage products, orders, dashboard statistics, and optional Steadfast parcel integration.
+
+## Tech Stack
+- Next.js 16 (App Router, JavaScript)
+- React 19
+- Tailwind CSS 4
+- MongoDB + Mongoose
+- TanStack Table, React Hook Form + Zod
 
 ## Features
 - Admin auth with JWT cookie
@@ -10,11 +17,21 @@ Modern admin panel to manage products, orders, dashboard statistics, and optiona
 - Optional push-to-Steadfast during order creation
 - Steadfast webhook + manual sync + cron sync endpoint
 - MongoDB models for Product, Order, OrderEvent
-- Seed script with admin credentials
+- Seed script with admin credentials from environment variables
+
+## Environment
+Copy env file and adjust as needed:
+
+```bash
+cp .env.example .env
+```
+
+Default `.env.example` already uses your MongoDB Atlas URI format.
 
 ## Admin Seed Credentials
-- Email: `admin@gmail.com`
-- Password: `12345`
+Set using env vars:
+- `SEED_ADMIN_EMAIL=admin@gmail.com`
+- `SEED_ADMIN_PASSWORD=123456`
 
 ## Getting Started
 1. Install dependencies:
